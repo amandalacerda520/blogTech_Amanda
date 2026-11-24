@@ -1,0 +1,22 @@
+const btnTema = document.getElementById('btn-tema');
+const body = document.body;
+
+btnTema.addEventListener('click', () => {
+    body.classList.toggle('tema-claro');
+
+    if (body.classList.contains('tema-claro')) {
+        btnTema.textContent = '🌙 Modo Escuro';
+    } else {
+        btnTema.textContent = '☀️ Modo Claro';
+    }
+});
+
+const botoesLike = document.querySelectorAll('.btn-like');
+
+botoesLike.forEach((botao) => {
+    botao.addEventListener('click', () => {
+        const contador = botao.querySelector('span');
+        let quantidade = Number(contador.textContent);
+        contador.textContent = quantidade + 1;
+    });
+});
