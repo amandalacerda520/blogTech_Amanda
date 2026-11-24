@@ -42,3 +42,10 @@ img {
 .artigo-autor {
     font-weight: bold;
 }
+
+footer{
+    background-color: aqua;
+    height:4em;
+    text-align: center;
+    
+}
